@@ -55,7 +55,7 @@ You can support me with some SOL : 53Bp1wrCDzMtCS9Djw63u7BXtLNdD1dVhm5GDSaSeymC
 
     `seedPhrase` --> your phantom wallet passphrase (Careful do not share this key)
 
-    `password` --> A password for your wallet
+    `password` --> Any password for setup
 
 5. Open CMD and go to directory
 
