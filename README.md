@@ -48,14 +48,11 @@ You can support me with some SOL : 53Bp1wrCDzMtCS9Djw63u7BXtLNdD1dVhm5GDSaSeymC
 
    `pip install selenium requests webdriver-manager`
    
-
 4. Replace Phantom Passphrase and password in `config.json`
 
     `launchpadLink` --> Launchpad link on magic eden
 
     `seedPhrase` --> your phantom wallet passphrase (Careful do not share this key)
-
-    `password` --> Any password for setup
 
 5. Open CMD and go to directory
 
