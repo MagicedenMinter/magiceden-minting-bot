@@ -124,7 +124,7 @@ def mint(values, isWindows):
     options.add_experimental_option("prefs", prefs)
 
     driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
-    print("Assertion - successfully found chrome driver")
+    print("Assertion - Successfully found chrome driver")
 
 
     # opens the launchpad page
